@@ -1,5 +1,6 @@
 # TwitterClient_Android
 A repo for a functional Android Twitter Client - Based on a CodePath Project
+ --> Migration from Eclipse Project to Android Studio
 
 User Stories
 
