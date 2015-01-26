@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+        android:id="@+id/postTweet"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_compose"
+        android:title="@string/tweet"/>
+    
+    <item 
+        android:id="@+id/btprofile"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_profile"
+        android:onClick="onProfileView"
+        android:title="Profile"/>
+
+</menu><!-- From: file:/Users/shawn/AndroidStudioProjects/TwitterClient/app/src/main/res/menu/timeline.xml -->

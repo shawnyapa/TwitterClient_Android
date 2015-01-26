@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/shawn/AndroidStudioProjects/TwitterClient/app/libs/codepath-utils.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
+        <dex dex="/Users/shawn/AndroidStudioProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/codepath-utils-73592d8851851dbdf0aad06eb09d2f5fb658218f.jar" />
+    </item>
+    <item
+        jar="/Users/shawn/AndroidStudioProjects/TwitterClient/app/libs/codepath-oauth-0.3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b90f1c3541987f690e2fb854775914cc23266250">
+        <dex dex="/Users/shawn/AndroidStudioProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/codepath-oauth-0.3.0-7615d32efcb19f0cdf56e2c4221ebb7d1f42bac7.jar" />
+    </item>
+    <item
+        jar="/Users/shawn/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/shawn/AndroidStudioProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-b2b6d78823bdde6833da62668f92363df211838c.jar" />
+    </item>
+    <item
+        jar="/Users/shawn/AndroidStudioProjects/TwitterClient/app/libs/universal-image-loader-1.8.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
+        <dex dex="/Users/shawn/AndroidStudioProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-54605b3eb52ad23460eca88635dc1e18c5fd114a.jar" />
+    </item>
+    <item
+        jar="/Users/shawn/AndroidStudioProjects/TwitterClient/app/libs/ActiveAndroid-3.1-adcddac4c58.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e550c03ed8bcfe3b9f97d8c5ce6e8ee305f3beed">
+        <dex dex="/Users/shawn/AndroidStudioProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/ActiveAndroid-3.1-adcddac4c58-298ba6e90a408f5859f5bada00454120a29d25a6.jar" />
+    </item>
+    <item
+        jar="/Users/shawn/AndroidStudioProjects/TwitterClient/app/libs/scribe-codepath.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6e0748acc9e7be0695de0d38016d260df52d9167">
+        <dex dex="/Users/shawn/AndroidStudioProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/scribe-codepath-47d61e26e50490150a746a1e10a2167672f6e6d4.jar" />
+    </item>
+    <item
+        jar="/Users/shawn/AndroidStudioProjects/TwitterClient/app/libs/android-async-http-1.4.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f70e680861fdf9449819003e7799a4e9aca047f8">
+        <dex dex="/Users/shawn/AndroidStudioProjects/TwitterClient/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.3-e9c0b47128dfb8ee76ee9a1b3a05287907b0f4a9.jar" />
+    </item>
+
+</items>
