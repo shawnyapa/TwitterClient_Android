@@ -7,10 +7,7 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-//import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-//import android.support.v4.widget.SwipeRefreshLayout;
-//import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
 import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
 import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
@@ -21,7 +18,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import com.codepath.apps.basictwitter.listeners.EndlessScrollListener;
 import com.codepath.apps.basictwitter.R;
 import com.codepath.apps.basictwitter.adapters.TweetArrayAdapter;
@@ -39,29 +35,24 @@ public class TweetsListFragment extends Fragment implements OnRefreshListener {
 	public ArrayList<Tweet> tweets;
 	public ArrayAdapter<Tweet> adapterTweets;
 	public ListView lvTweets;
-	//public SwipeRefreshLayout swipeContainer;
     private PullToRefreshLayout mPullToRefreshLayout;
-
     public enum TweetQueryType {
 		FIRST_LOAD, OLDER_TWEETS, NEWER_TWEETS
 		}
 	public TweetQueryType newTweetType = TweetQueryType.FIRST_LOAD;
 
-	public String type;
 	public String user;
-	
 	public String getUser() {
 		return user;
 	}
-
 	public void setUser(String user) {
 		this.user = user;
 	}
 
+    public String type;
 	public String getType() {
 		return type;
 	}
-
 	public void setType(String type) {
 		this.type = type;
 	}
@@ -81,6 +72,7 @@ public class TweetsListFragment extends Fragment implements OnRefreshListener {
 		View v = inflater.inflate(R.layout.fragment_tweets_list, container, false);
 		lvTweets = (ListView) v.findViewById(R.id.lvTweets);
 		lvTweets.setAdapter(adapterTweets);
+        lvTweets.setVisibility(View.VISIBLE);
 		
         lvTweets.setOnScrollListener(new EndlessScrollListener() {
         	@Override
@@ -93,20 +85,6 @@ public class TweetsListFragment extends Fragment implements OnRefreshListener {
         		} else { networkUnavailableToast(); }
 	    	}
                 });
-        /*
-        swipeContainer = (SwipeRefreshLayout) v.findViewById(R.id.swipeContainer);
-        // Setup refresh listener which triggers new data loading
-        swipeContainer.setOnRefreshListener(new OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                // Your code to refresh the list here.
-                // Make sure you call swipeContainer.setRefreshing(false)
-                // once the network request has completed successfully.
-            	refreshTimeline();
-            } 
-        });
-        */
-
 
 		return v;
 	}
@@ -123,8 +101,7 @@ public class TweetsListFragment extends Fragment implements OnRefreshListener {
         ActionBarPullToRefresh.from(getActivity())
                 // We need to insert the PullToRefreshLayout into the Fragment's ViewGroup
                 .insertLayoutInto(viewGroup)
-                        // Here we mark just the ListView and it's Empty View as pullable
-                //.theseChildrenArePullable(android.R.id.list, android.R.id.empty)
+                // Here we mark the ListView as pullable
                 .theseChildrenArePullable(R.id.lvTweets)
                 .listener(this)
                 .setup(mPullToRefreshLayout);
@@ -134,17 +111,11 @@ public class TweetsListFragment extends Fragment implements OnRefreshListener {
     @Override
     public void onRefreshStarted(View view) {
         // Hide the list
-        // setListShown(false);
         lvTweets.setVisibility(View.INVISIBLE);
         refreshTimeline();
-        /**
-         * Simulate Refresh with 4 seconds sleep
-         */
-
     }
 	
-	public void addTweetstoTimeline(int count, long maxId, long sinceId) {	
-		
+	public void addTweetstoTimeline(int count, long maxId, long sinceId) {
 		client.getTimeline(user, type, count, maxId, sinceId, new JsonHttpResponseHandler() {
 			@Override
 			public void onSuccess(JSONArray json) {		
@@ -228,7 +199,6 @@ public class TweetsListFragment extends Fragment implements OnRefreshListener {
 	private void stopRefreshing() {
         lvTweets.setVisibility(View.VISIBLE);
         mPullToRefreshLayout.setRefreshComplete();
-		
 	}
 	public boolean doesDatabaseExist() {
     	Context context = getActivity().getApplicationContext();

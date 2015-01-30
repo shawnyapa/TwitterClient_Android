@@ -16,14 +16,17 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ProgressBar;
 
 public class CreateTweetActivity extends Activity {
 	public TwitterClient client;
 	private EditText etTweet;
 	private TextView etCharCount;
+    private ProgressBar pbPostTweet;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,7 @@ public class CreateTweetActivity extends Activity {
 		etTweet = (EditText) findViewById(R.id.etTweet);
 		etCharCount = (TextView) findViewById(R.id.tvCharCount);
 		client = TwitterApplication.getRestClient();
+        pbPostTweet = (ProgressBar) findViewById(R.id.pbLoading);
         getActionBar().setTitle("Compose Tweet");
 		etTweet.addTextChangedListener(new TextWatcher() {
 
@@ -39,7 +43,6 @@ public class CreateTweetActivity extends Activity {
                   int charCount = s.length();
                   int charRemaining = 140-charCount;
                   etCharCount.setText(Integer.toString(charRemaining));
-	        	  //etCharCount.setText(Integer.toString(s.length()));
 	          }
 	          public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
@@ -53,17 +56,15 @@ public class CreateTweetActivity extends Activity {
         Tweet tweet = new Tweet();
         String tweetBody = etTweet.getText().toString();
         tweet.setBody(tweetBody);
-        //Toast.makeText(this, "Body: " + tweetBody, Toast.LENGTH_SHORT).show();
-        // Initiate Spinner
+        // Initiate Progress Bar
+        pbPostTweet.setVisibility(View.VISIBLE);
 
         client.postTweet(tweetBody, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(JSONObject json) {
-                //Log.d("debug", json.toString());
-                //Remove Spinner
+                //Remove Progress Bar
+                pbPostTweet.setVisibility(View.INVISIBLE);
                 createTweetandPosttoTimeline(json);
-                //fromJSON(JSONObject jsonObject)
-                //CreateTweetActivity.this.finish();
             }
 
             @Override
@@ -79,8 +80,9 @@ public class CreateTweetActivity extends Activity {
 		Tweet newTweet = Tweet.fromJSON(json);
 		Intent i = new Intent(CreateTweetActivity.this, TimelineActivity.class);
         i.putExtra("newTweet", newTweet);
+        //Log.d("Debug", json.toString());
         setResult(RESULT_OK, i);
-        finish();	
+        finish();
 	}
 
     @Override

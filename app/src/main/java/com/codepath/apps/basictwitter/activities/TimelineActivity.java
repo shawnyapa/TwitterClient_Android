@@ -18,13 +18,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.support.v4.app.FragmentActivity;
-//import android.support.v4.widget.SwipeRefreshLayout;
-//import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
+import android.util.Log;
+
 
 
 public class TimelineActivity extends FragmentActivity {
 
 	public final int REQUEST_CODE_COMPOSE = 10;
+    private final String FIRST_TAB_TAG = "first";
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +44,9 @@ public class TimelineActivity extends FragmentActivity {
 			.newTab()
 			.setText("Home")
 			.setIcon(R.drawable.ic_home)
-			.setTag("HomeTimelineFragment")
+			//.setTag("HomeTimelineFragment")
 			.setTabListener(
-				new FragmentTabListener<HomeTimelineFragment>(R.id.flContainer, this, "first",
+				new FragmentTabListener<HomeTimelineFragment>(R.id.flContainer, this, FIRST_TAB_TAG,
 						HomeTimelineFragment.class));
 
 		actionBar.addTab(tab1);
@@ -102,19 +104,20 @@ public class TimelineActivity extends FragmentActivity {
 	  // REQUEST_CODE is defined above
 		if (resultCode == RESULT_OK && requestCode == REQUEST_CODE_COMPOSE) {
 			Tweet newTweet = (Tweet) data.getSerializableExtra("newTweet");
-			//checkAndAddNewTweet(newTweet);
+			checkAndAddNewTweet(newTweet);
 		}
 	}
 	
 	public void checkAndAddNewTweet(Tweet newTweet) {
-		HomeTimelineFragment homeTimelineFragment = new HomeTimelineFragment();	
+        HomeTimelineFragment homeTimelineFragment = (HomeTimelineFragment)getSupportFragmentManager().findFragmentByTag(FIRST_TAB_TAG);
+        Log.d("debug", "Tweet Body:"+newTweet.getBody().toString());
+        Log.d("debug", "TweetList Count:"+homeTimelineFragment.tweets.size());
 		homeTimelineFragment.tweets.add(0, newTweet);
 		// clear ArrayList
 		// Pull Data from Active Android
 		//clearAndReloadTweetsfromActiveAndroid();
 		homeTimelineFragment.sinceId = newTweet.getUid();
-		
+        homeTimelineFragment.adapterTweets.notifyDataSetChanged();
 	}
-	
 
 }

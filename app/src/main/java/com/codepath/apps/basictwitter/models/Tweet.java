@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -21,14 +22,14 @@ import org.json.JSONObject;
 
 @Table(name = "Tweets")
 public class Tweet extends Model implements Serializable{
-	/**
+    private static final long serialVersionUID = 6156303816885939537L;
+    /**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 	@Column(name = "uid", unique = true, onUniqueConflict = Column.ConflictAction.REPLACE)
 	private long uid;
 	@Column(name="body")
-	private String body;
+	public String body;
 	@Column(name="createdAt")
 	private Date createdAt;
 	@Column(name = "user", onUpdate = ForeignKeyAction.CASCADE, onDelete = ForeignKeyAction.CASCADE)
@@ -75,13 +76,13 @@ public class Tweet extends Model implements Serializable{
 			tweet.save();
 			*/
 			tweet.user = User.fromJSON(jsonObject.getJSONObject("user"));
-			
+			//Log.d("debug", tweet.user.name.toString());
 		} catch (JSONException e) {
 			e.printStackTrace();
 			return null;
 		}
 		
-		
+		//Log.d("debug", tweet.body.toString());
 		return tweet;
 	}
 

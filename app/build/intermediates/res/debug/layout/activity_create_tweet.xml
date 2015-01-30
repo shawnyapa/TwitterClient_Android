@@ -37,6 +37,13 @@
         android:text="140"
         android:textColor="#b1bbbbbb"
         android:textSize="6pt"/>
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvCharCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
 <!-- From: file:/Users/shawn/AndroidStudioProjects/TwitterClient/app/src/main/res/layout/activity_create_tweet.xml -->
