@@ -12,25 +12,19 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:ems="10"
+        android:gravity="top|left"
         android:inputType="textMultiLine" />
-
-    <Button
-        android:id="@+id/btTweet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:onClick="postTweet"
-        android:text="@string/tweet" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btTweet"
+        android:layout_below="@+id/etTweet"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="@string/char_count" />
+        android:text="@string/char_remaining"
+        android:textColor="#b1bbbbbb"
+        android:textSize="6pt"/>
 
     <TextView
         android:id="@+id/tvCharCount"
@@ -38,8 +32,10 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView1"
         android:layout_alignBottom="@+id/textView1"
-        android:layout_marginLeft="19dp"
+        android:layout_marginLeft="10dp"
         android:layout_toRightOf="@+id/textView1"
-        android:text="0" />
+        android:text="140"
+        android:textColor="#b1bbbbbb"
+        android:textSize="6pt"/>
 
 </RelativeLayout>

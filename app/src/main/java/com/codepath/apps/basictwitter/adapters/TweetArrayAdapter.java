@@ -1,9 +1,10 @@
-package com.codepath.apps.basictwitter;
+package com.codepath.apps.basictwitter.adapters;
 
 
 import java.util.Date;
 import java.util.List;
 
+import com.codepath.apps.basictwitter.R;
 import com.codepath.apps.basictwitter.models.Tweet;
 import com.codepath.apps.basictwitter.models.User;
 import com.nostra13.universalimageloader.core.ImageLoader;

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:padding="8dp">
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -29,8 +30,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/ivProfileImage"
-        android:padding="5dp"
+        android:layout_marginLeft="8dp"
         android:paddingBottom="1dp"
+        android:textStyle="bold"
         android:text="@string/screen_name" />
 
     <TextView
@@ -39,7 +41,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/tvScreenName"
         android:layout_below="@+id/tvScreenName"
-        android:padding="5dp"
         android:paddingBottom="1dp"
         android:text="@string/tweet_body" />
 
@@ -49,6 +50,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:textColor="#b1bbbbbb"
+        android:textSize="6pt"
         android:text="@string/time_delta" />
 
 

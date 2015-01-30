@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Basic Twitter</string>
+    <string name="app_name">Twitter</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_photos">Flickr Photos</string>
@@ -14,6 +14,7 @@
     <string name="tweet">Tweet</string>
     <string name="refresh">Refresh</string>
     <string name="char_count">"Character Count: "</string>
+    <string name="char_remaining">"Characters Remaining: "</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="profile">Profile</string>
     <string name="tagline">This is the tagline!</string>

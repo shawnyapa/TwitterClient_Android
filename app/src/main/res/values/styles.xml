@@ -23,7 +23,7 @@
     </style>
 
     <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid">
-        <item name="android:background">#00ACED</item>
+        <item name="android:background">#55ACEE</item>
         <item name="android:titleTextStyle">@style/MyActionBar.TitleTextStyle</item>
     </style>
 

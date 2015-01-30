@@ -1,7 +1,9 @@
-package com.codepath.apps.basictwitter;
+package com.codepath.apps.basictwitter.activities;
 
 import org.json.JSONObject;
 
+import com.codepath.apps.basictwitter.R;
+import com.codepath.apps.basictwitter.TwitterApplication;
 import com.codepath.apps.basictwitter.fragments.UserTimelineFragment;
 import com.codepath.apps.basictwitter.models.User;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -19,6 +21,7 @@ import android.widget.Toast;
 public class ProfileActivity extends FragmentActivity {
 	
 	ImageView ivProfile;
+    TextView tvScreenName;
 	TextView tvTagline;
 	TextView tvFollowing;
 	TextView tvFollowers;
@@ -28,6 +31,7 @@ public class ProfileActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_profile);
+        tvScreenName = (TextView) findViewById(R.id.tvScreenName);
 		ivProfile = (ImageView) findViewById(R.id.ivProfile);
 		tvTagline = (TextView) findViewById(R.id.tvTagline);
 		tvFollowing = (TextView) findViewById(R.id.tvFollowing);
@@ -60,6 +64,7 @@ public class ProfileActivity extends FragmentActivity {
 				getActionBar().setTitle("@" + u.getScreenName());
 				ImageLoader imageLoader = ImageLoader.getInstance();
 				imageLoader.displayImage(u.getProfileImageUrl(), ivProfile);
+                tvScreenName.setText(u.getScreenName());
 				tvTagline.setText(u.getTagline());
 				tvFollowing.setText("Following: " + u.getFollowing());
 				tvFollowers.setText("Followers: " + u.getFollowers());
@@ -72,6 +77,7 @@ public class ProfileActivity extends FragmentActivity {
 			getActionBar().setTitle("@" + u.getScreenName());
 			ImageLoader imageLoader = ImageLoader.getInstance();
 			imageLoader.displayImage(u.getProfileImageUrl(), ivProfile);
+            tvScreenName.setText(u.getScreenName());
 			tvTagline.setText(u.getTagline());
 			tvFollowing.setText("Following: " + u.getFollowing());
 			tvFollowers.setText("Followers: " + u.getFollowers());	

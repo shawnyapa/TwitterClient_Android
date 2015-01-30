@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.codepath.apps.basictwitter.ProfileActivity" >
+    tools:context="com.codepath.apps.basictwitter.activities.ProfileActivity" >
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
@@ -24,16 +24,30 @@
         android:layout_alignParentTop="true"
         android:contentDescription="@string/profile"
         android:src="@drawable/ic_profile" />
-        
+
         <TextView
-        android:id="@+id/tvTagline"
+        android:id="@+id/tvScreenName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/ivProfile"
         android:layout_alignParentTop="true"
-        android:padding="10dp"
+        android:paddingTop="4dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:text="ScreenName" />
+
+        <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvScreenName"
+        android:layout_toRightOf="@+id/ivProfile"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+            android:paddingTop="4dp"
         android:text="@string/tagline" />
-        
         
         <RelativeLayout
         android:id="@+id/relativeLayout2"

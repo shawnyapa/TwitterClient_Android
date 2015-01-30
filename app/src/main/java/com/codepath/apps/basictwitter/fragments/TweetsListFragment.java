@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 //import android.support.v4.widget.SwipeRefreshLayout;
 //import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
+//import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,9 +20,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.codepath.apps.basictwitter.EndlessScrollListener;
+import com.codepath.apps.basictwitter.listeners.EndlessScrollListener;
 import com.codepath.apps.basictwitter.R;
-import com.codepath.apps.basictwitter.TweetArrayAdapter;
+import com.codepath.apps.basictwitter.adapters.TweetArrayAdapter;
 import com.codepath.apps.basictwitter.TwitterApplication;
 import com.codepath.apps.basictwitter.TwitterClient;
 import com.codepath.apps.basictwitter.models.Tweet;
@@ -37,6 +38,8 @@ public class TweetsListFragment extends Fragment {
 	public ArrayAdapter<Tweet> adapterTweets;
 	public ListView lvTweets;
 	//public SwipeRefreshLayout swipeContainer;
+    //private PullToRefreshLayout mPullToRefreshLayout;
+
 	public enum TweetQueryType {
 		FIRST_LOAD, OLDER_TWEETS, NEWER_TWEETS
 		}
@@ -87,7 +90,7 @@ public class TweetsListFragment extends Fragment {
         		addTweetstoTimeline(count, maxId, 0);
         		} else { networkUnavailableToast(); }
 	    	}
-        });
+                });
         /*
         swipeContainer = (SwipeRefreshLayout) v.findViewById(R.id.swipeContainer);
         // Setup refresh listener which triggers new data loading

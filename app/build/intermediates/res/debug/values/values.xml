@@ -7,8 +7,9 @@
     <!-- From: file:/Users/shawn/AndroidStudioProjects/TwitterClient/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
-    <string name="app_name">Basic Twitter</string>
+    <string name="app_name">Twitter</string>
     <string name="char_count">"Character Count: "</string>
+    <string name="char_remaining">"Characters Remaining: "</string>
     <string name="followers">Followers:</string>
     <string name="following">Following:</string>
     <string name="hello_world">Hello world!</string>
@@ -37,7 +38,7 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     <style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid">
-        <item name="android:background">#00ACED</item>
+        <item name="android:background">#55ACEE</item>
         <item name="android:titleTextStyle">@style/MyActionBar.TitleTextStyle</item>
     </style>
     <style name="MyActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
