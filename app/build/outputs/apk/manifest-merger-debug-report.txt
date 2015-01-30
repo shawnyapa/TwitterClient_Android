@@ -15,6 +15,8 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
+MERGED from com.github.chrisbanes.actionbarpulltorefresh:library:0.9.9:2:5
+MERGED from com.github.castorflex.smoothprogressbar:library:0.4.0:3:5
 	android:targetSdkVersion
 		ADDED from AndroidManifest.xml:9:9
 		INJECTED from AndroidManifest.xml:0:0
@@ -37,6 +39,8 @@ ADDED from AndroidManifest.xml:13:5
 		ADDED from AndroidManifest.xml:13:22
 application
 ADDED from AndroidManifest.xml:15:5
+MERGED from com.github.chrisbanes.actionbarpulltorefresh:library:0.9.9:3:5
+MERGED from com.github.castorflex.smoothprogressbar:library:0.4.0:5:5
 	android:label
 		ADDED from AndroidManifest.xml:19:9
 	android:allowBackup

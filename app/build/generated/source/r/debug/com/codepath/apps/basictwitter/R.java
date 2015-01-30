@@ -9,10 +9,209 @@ package com.codepath.apps.basictwitter;
 
 public final class R {
     public static final class attr {
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrHeaderBackground=0x7f010001;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int ptrHeaderHeight=0x7f010002;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrHeaderStyle=0x7f010000;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrHeaderTitleTextAppearance=0x7f010003;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrProgressBarColor=0x7f010004;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int ptrProgressBarHeight=0x7f010006;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>inside</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>outside</code></td><td>0x1</td><td></td></tr>
+</table>
+         */
+        public static final int ptrProgressBarStyle=0x7f010005;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int ptrPullText=0x7f010007;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int ptrRefreshingText=0x7f010008;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int ptrReleaseText=0x7f010009;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrSmoothProgressBarStyle=0x7f01000a;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int ptrViewDelegateClass=0x7f01000b;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int spbStyle=0x7f01000c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int spb_background=0x7f010019;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_color=0x7f01000d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int spb_colors=0x7f010017;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_generate_background_with_colors=0x7f01001a;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>spb_interpolator_accelerate</code></td><td>0</td><td></td></tr>
+<tr><td><code>spb_interpolator_linear</code></td><td>1</td><td></td></tr>
+<tr><td><code>spb_interpolator_acceleratedecelerate</code></td><td>2</td><td></td></tr>
+<tr><td><code>spb_interpolator_decelerate</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int spb_interpolator=0x7f010014;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_mirror_mode=0x7f010016;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_progressiveStart_activated=0x7f010018;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_progressiveStart_speed=0x7f010012;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_progressiveStop_speed=0x7f010013;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_reversed=0x7f010015;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_sections_count=0x7f010010;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_speed=0x7f010011;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_stroke_separator_length=0x7f01000f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int spb_stroke_width=0x7f01000e;
+    }
+    public static final class bool {
+        public static final int spb_default_mirror_mode=0x7f040000;
+        public static final int spb_default_progressiveStart_activated=0x7f040001;
+        public static final int spb_default_reversed=0x7f040002;
+    }
+    public static final class color {
+        public static final int default_progress_bar_color=0x7f050000;
+        public static final int spb_default_color=0x7f050001;
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
+        public static final int ptr_progress_bar_stroke_width=0x7f060002;
+        public static final int spb_default_stroke_separator_length=0x7f060003;
+        public static final int spb_default_stroke_width=0x7f060004;
     }
     public static final class drawable {
         public static final int button_register_twitter=0x7f020000;
@@ -25,65 +224,84 @@ public final class R {
         public static final int sky_background=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f080015;
-        public static final int btUser=0x7f080011;
-        public static final int btprofile=0x7f080017;
-        public static final int button=0x7f080004;
-        public static final int ctUserTimelineFragment=0x7f08000d;
-        public static final int etTweet=0x7f080000;
-        public static final int flContainer=0x7f08000e;
-        public static final int frame_layout=0x7f080003;
-        public static final int ivProfile=0x7f080007;
-        public static final int ivProfileImage=0x7f080010;
-        public static final int lvTweets=0x7f08000f;
-        public static final int postTweet=0x7f080016;
-        public static final int relativeLayout1=0x7f080006;
-        public static final int relativeLayout2=0x7f08000a;
-        public static final int submitTweet=0x7f080014;
-        public static final int textView=0x7f080005;
-        public static final int textView1=0x7f080001;
-        public static final int tvBody=0x7f080012;
-        public static final int tvCharCount=0x7f080002;
-        public static final int tvFollowers=0x7f08000c;
-        public static final int tvFollowing=0x7f08000b;
-        public static final int tvScreenName=0x7f080008;
-        public static final int tvTagline=0x7f080009;
-        public static final int tvTimeDelta=0x7f080013;
+        public static final int action_settings=0x7f07001f;
+        public static final int btUser=0x7f07001b;
+        public static final int btprofile=0x7f070021;
+        public static final int button=0x7f07000d;
+        public static final int ctUserTimelineFragment=0x7f070016;
+        public static final int etTweet=0x7f070009;
+        public static final int flContainer=0x7f070017;
+        public static final int frame_layout=0x7f07000c;
+        public static final int inside=0x7f070003;
+        public static final int ivProfile=0x7f070010;
+        public static final int ivProfileImage=0x7f07001a;
+        public static final int lvTweets=0x7f070019;
+        public static final int outside=0x7f070004;
+        public static final int postTweet=0x7f070020;
+        public static final int ptr_content=0x7f070000;
+        public static final int ptr_layout=0x7f070018;
+        public static final int ptr_progress=0x7f070001;
+        public static final int ptr_text=0x7f070002;
+        public static final int relativeLayout1=0x7f07000f;
+        public static final int relativeLayout2=0x7f070013;
+        public static final int spb_interpolator_accelerate=0x7f070005;
+        public static final int spb_interpolator_acceleratedecelerate=0x7f070006;
+        public static final int spb_interpolator_decelerate=0x7f070007;
+        public static final int spb_interpolator_linear=0x7f070008;
+        public static final int submitTweet=0x7f07001e;
+        public static final int textView=0x7f07000e;
+        public static final int textView1=0x7f07000a;
+        public static final int tvBody=0x7f07001c;
+        public static final int tvCharCount=0x7f07000b;
+        public static final int tvFollowers=0x7f070015;
+        public static final int tvFollowing=0x7f070014;
+        public static final int tvScreenName=0x7f070011;
+        public static final int tvTagline=0x7f070012;
+        public static final int tvTimeDelta=0x7f07001d;
+    }
+    public static final class integer {
+        public static final int spb_default_interpolator=0x7f080000;
+        public static final int spb_default_sections_count=0x7f080001;
     }
     public static final class layout {
         public static final int activity_create_tweet=0x7f030000;
         public static final int activity_login=0x7f030001;
         public static final int activity_profile=0x7f030002;
         public static final int activity_timeline=0x7f030003;
-        public static final int fragment_tweets_list=0x7f030004;
-        public static final int tweet_item=0x7f030005;
+        public static final int default_header=0x7f030004;
+        public static final int fragment_tweets_list=0x7f030005;
+        public static final int tweet_item=0x7f030006;
     }
     public static final class menu {
-        public static final int create_tweet=0x7f070000;
-        public static final int login=0x7f070001;
-        public static final int profile=0x7f070002;
-        public static final int timeline=0x7f070003;
+        public static final int create_tweet=0x7f0b0000;
+        public static final int login=0x7f0b0001;
+        public static final int profile=0x7f0b0002;
+        public static final int timeline=0x7f0b0003;
     }
     public static final class string {
-        public static final int action_settings=0x7f050000;
-        public static final int app_name=0x7f050001;
-        public static final int char_count=0x7f050002;
-        public static final int char_remaining=0x7f050003;
-        public static final int followers=0x7f050004;
-        public static final int following=0x7f050005;
-        public static final int hello_world=0x7f050006;
-        public static final int login_label=0x7f050007;
-        public static final int profile=0x7f050008;
-        public static final int refresh=0x7f050009;
-        public static final int screen_name=0x7f05000a;
-        public static final int tagline=0x7f05000b;
-        public static final int time_delta=0x7f05000c;
-        public static final int title_activity_create_tweet=0x7f05000d;
-        public static final int title_activity_photos=0x7f05000e;
-        public static final int title_activity_profile=0x7f05000f;
-        public static final int title_activity_timeline=0x7f050010;
-        public static final int tweet=0x7f050011;
-        public static final int tweet_body=0x7f050012;
+        public static final int action_settings=0x7f090000;
+        public static final int app_name=0x7f090001;
+        public static final int char_count=0x7f090002;
+        public static final int char_remaining=0x7f090003;
+        public static final int followers=0x7f090004;
+        public static final int following=0x7f090005;
+        public static final int hello_world=0x7f090006;
+        public static final int login_label=0x7f090007;
+        public static final int profile=0x7f090008;
+        public static final int pull_to_refresh_pull_label=0x7f090009;
+        public static final int pull_to_refresh_refreshing_label=0x7f09000a;
+        public static final int pull_to_refresh_release_label=0x7f09000b;
+        public static final int refresh=0x7f09000c;
+        public static final int screen_name=0x7f09000d;
+        public static final int spb_default_speed=0x7f09000e;
+        public static final int tagline=0x7f09000f;
+        public static final int time_delta=0x7f090010;
+        public static final int title_activity_create_tweet=0x7f090011;
+        public static final int title_activity_photos=0x7f090012;
+        public static final int title_activity_profile=0x7f090013;
+        public static final int title_activity_timeline=0x7f090014;
+        public static final int tweet=0x7f090015;
+        public static final int tweet_body=0x7f090016;
     }
     public static final class style {
         /** 
@@ -94,12 +312,445 @@ public final class R {
  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f0a0000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
-        public static final int MyActionBar=0x7f060002;
-        public static final int MyActionBar_TitleTextStyle=0x7f060003;
-        public static final int MyCustomTheme=0x7f060004;
+        public static final int AppTheme=0x7f0a0001;
+        public static final int MyActionBar=0x7f0a0002;
+        public static final int MyActionBar_TitleTextStyle=0x7f0a0003;
+        public static final int MyCustomTheme=0x7f0a0004;
+        public static final int SmoothProgressBar=0x7f0a0005;
+        public static final int Theme_SmoothProgressBarDefaults=0x7f0a0006;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a PullToRefreshHeader.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrHeaderBackground com.codepath.apps.basictwitter:ptrHeaderBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrHeaderHeight com.codepath.apps.basictwitter:ptrHeaderHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrHeaderTitleTextAppearance com.codepath.apps.basictwitter:ptrHeaderTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrProgressBarColor com.codepath.apps.basictwitter:ptrProgressBarColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrProgressBarHeight com.codepath.apps.basictwitter:ptrProgressBarHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrProgressBarStyle com.codepath.apps.basictwitter:ptrProgressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrPullText com.codepath.apps.basictwitter:ptrPullText}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrRefreshingText com.codepath.apps.basictwitter:ptrRefreshingText}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrReleaseText com.codepath.apps.basictwitter:ptrReleaseText}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrSmoothProgressBarStyle com.codepath.apps.basictwitter:ptrSmoothProgressBarStyle}</code></td><td></td></tr>
+           </table>
+           @see #PullToRefreshHeader_ptrHeaderBackground
+           @see #PullToRefreshHeader_ptrHeaderHeight
+           @see #PullToRefreshHeader_ptrHeaderTitleTextAppearance
+           @see #PullToRefreshHeader_ptrProgressBarColor
+           @see #PullToRefreshHeader_ptrProgressBarHeight
+           @see #PullToRefreshHeader_ptrProgressBarStyle
+           @see #PullToRefreshHeader_ptrPullText
+           @see #PullToRefreshHeader_ptrRefreshingText
+           @see #PullToRefreshHeader_ptrReleaseText
+           @see #PullToRefreshHeader_ptrSmoothProgressBarStyle
+         */
+        public static final int[] PullToRefreshHeader = {
+            0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004,
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f010009, 0x7f01000a
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrHeaderBackground}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name com.codepath.apps.basictwitter:ptrHeaderBackground
+        */
+        public static final int PullToRefreshHeader_ptrHeaderBackground = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrHeaderHeight}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.codepath.apps.basictwitter:ptrHeaderHeight
+        */
+        public static final int PullToRefreshHeader_ptrHeaderHeight = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrHeaderTitleTextAppearance}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.codepath.apps.basictwitter:ptrHeaderTitleTextAppearance
+        */
+        public static final int PullToRefreshHeader_ptrHeaderTitleTextAppearance = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrProgressBarColor}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name com.codepath.apps.basictwitter:ptrProgressBarColor
+        */
+        public static final int PullToRefreshHeader_ptrProgressBarColor = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrProgressBarHeight}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.codepath.apps.basictwitter:ptrProgressBarHeight
+        */
+        public static final int PullToRefreshHeader_ptrProgressBarHeight = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrProgressBarStyle}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>inside</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>outside</code></td><td>0x1</td><td></td></tr>
+</table>
+          @attr name com.codepath.apps.basictwitter:ptrProgressBarStyle
+        */
+        public static final int PullToRefreshHeader_ptrProgressBarStyle = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrPullText}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          @attr name com.codepath.apps.basictwitter:ptrPullText
+        */
+        public static final int PullToRefreshHeader_ptrPullText = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrRefreshingText}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          @attr name com.codepath.apps.basictwitter:ptrRefreshingText
+        */
+        public static final int PullToRefreshHeader_ptrRefreshingText = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrReleaseText}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          @attr name com.codepath.apps.basictwitter:ptrReleaseText
+        */
+        public static final int PullToRefreshHeader_ptrReleaseText = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrSmoothProgressBarStyle}
+          attribute's value can be found in the {@link #PullToRefreshHeader} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.codepath.apps.basictwitter:ptrSmoothProgressBarStyle
+        */
+        public static final int PullToRefreshHeader_ptrSmoothProgressBarStyle = 9;
+        /** Attributes that can be used with a PullToRefreshView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PullToRefreshView_ptrViewDelegateClass com.codepath.apps.basictwitter:ptrViewDelegateClass}</code></td><td></td></tr>
+           </table>
+           @see #PullToRefreshView_ptrViewDelegateClass
+         */
+        public static final int[] PullToRefreshView = {
+            0x7f01000b
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#ptrViewDelegateClass}
+          attribute's value can be found in the {@link #PullToRefreshView} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          @attr name com.codepath.apps.basictwitter:ptrViewDelegateClass
+        */
+        public static final int PullToRefreshView_ptrViewDelegateClass = 0;
+        /** Attributes that can be used with a SmoothProgressBar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spbStyle com.codepath.apps.basictwitter:spbStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_background com.codepath.apps.basictwitter:spb_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_color com.codepath.apps.basictwitter:spb_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_colors com.codepath.apps.basictwitter:spb_colors}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_generate_background_with_colors com.codepath.apps.basictwitter:spb_generate_background_with_colors}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_interpolator com.codepath.apps.basictwitter:spb_interpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_mirror_mode com.codepath.apps.basictwitter:spb_mirror_mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_progressiveStart_activated com.codepath.apps.basictwitter:spb_progressiveStart_activated}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_progressiveStart_speed com.codepath.apps.basictwitter:spb_progressiveStart_speed}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_progressiveStop_speed com.codepath.apps.basictwitter:spb_progressiveStop_speed}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_reversed com.codepath.apps.basictwitter:spb_reversed}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_sections_count com.codepath.apps.basictwitter:spb_sections_count}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_speed com.codepath.apps.basictwitter:spb_speed}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_stroke_separator_length com.codepath.apps.basictwitter:spb_stroke_separator_length}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothProgressBar_spb_stroke_width com.codepath.apps.basictwitter:spb_stroke_width}</code></td><td></td></tr>
+           </table>
+           @see #SmoothProgressBar_spbStyle
+           @see #SmoothProgressBar_spb_background
+           @see #SmoothProgressBar_spb_color
+           @see #SmoothProgressBar_spb_colors
+           @see #SmoothProgressBar_spb_generate_background_with_colors
+           @see #SmoothProgressBar_spb_interpolator
+           @see #SmoothProgressBar_spb_mirror_mode
+           @see #SmoothProgressBar_spb_progressiveStart_activated
+           @see #SmoothProgressBar_spb_progressiveStart_speed
+           @see #SmoothProgressBar_spb_progressiveStop_speed
+           @see #SmoothProgressBar_spb_reversed
+           @see #SmoothProgressBar_spb_sections_count
+           @see #SmoothProgressBar_spb_speed
+           @see #SmoothProgressBar_spb_stroke_separator_length
+           @see #SmoothProgressBar_spb_stroke_width
+         */
+        public static final int[] SmoothProgressBar = {
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013,
+            0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017,
+            0x7f010018, 0x7f010019, 0x7f01001a
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spbStyle}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.codepath.apps.basictwitter:spbStyle
+        */
+        public static final int SmoothProgressBar_spbStyle = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_background}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.codepath.apps.basictwitter:spb_background
+        */
+        public static final int SmoothProgressBar_spb_background = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_color}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_color
+        */
+        public static final int SmoothProgressBar_spb_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_colors}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.codepath.apps.basictwitter:spb_colors
+        */
+        public static final int SmoothProgressBar_spb_colors = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_generate_background_with_colors}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_generate_background_with_colors
+        */
+        public static final int SmoothProgressBar_spb_generate_background_with_colors = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_interpolator}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>spb_interpolator_accelerate</code></td><td>0</td><td></td></tr>
+<tr><td><code>spb_interpolator_linear</code></td><td>1</td><td></td></tr>
+<tr><td><code>spb_interpolator_acceleratedecelerate</code></td><td>2</td><td></td></tr>
+<tr><td><code>spb_interpolator_decelerate</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name com.codepath.apps.basictwitter:spb_interpolator
+        */
+        public static final int SmoothProgressBar_spb_interpolator = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_mirror_mode}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_mirror_mode
+        */
+        public static final int SmoothProgressBar_spb_mirror_mode = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_progressiveStart_activated}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_progressiveStart_activated
+        */
+        public static final int SmoothProgressBar_spb_progressiveStart_activated = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_progressiveStart_speed}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_progressiveStart_speed
+        */
+        public static final int SmoothProgressBar_spb_progressiveStart_speed = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_progressiveStop_speed}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_progressiveStop_speed
+        */
+        public static final int SmoothProgressBar_spb_progressiveStop_speed = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_reversed}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_reversed
+        */
+        public static final int SmoothProgressBar_spb_reversed = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_sections_count}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_sections_count
+        */
+        public static final int SmoothProgressBar_spb_sections_count = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_speed}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_speed
+        */
+        public static final int SmoothProgressBar_spb_speed = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_stroke_separator_length}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_stroke_separator_length
+        */
+        public static final int SmoothProgressBar_spb_stroke_separator_length = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.codepath.apps.basictwitter.R.attr#spb_stroke_width}
+          attribute's value can be found in the {@link #SmoothProgressBar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.codepath.apps.basictwitter:spb_stroke_width
+        */
+        public static final int SmoothProgressBar_spb_stroke_width = 2;
+    };
 }

@@ -11,7 +11,9 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 //import android.support.v4.widget.SwipeRefreshLayout;
 //import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
-//import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
+import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
+import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,7 +30,7 @@ import com.codepath.apps.basictwitter.TwitterClient;
 import com.codepath.apps.basictwitter.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
-public class TweetsListFragment extends Fragment {
+public class TweetsListFragment extends Fragment implements OnRefreshListener {
 
 	public TwitterClient client;
 	public int count = 20;
@@ -38,9 +40,9 @@ public class TweetsListFragment extends Fragment {
 	public ArrayAdapter<Tweet> adapterTweets;
 	public ListView lvTweets;
 	//public SwipeRefreshLayout swipeContainer;
-    //private PullToRefreshLayout mPullToRefreshLayout;
+    private PullToRefreshLayout mPullToRefreshLayout;
 
-	public enum TweetQueryType {
+    public enum TweetQueryType {
 		FIRST_LOAD, OLDER_TWEETS, NEWER_TWEETS
 		}
 	public TweetQueryType newTweetType = TweetQueryType.FIRST_LOAD;
@@ -104,8 +106,42 @@ public class TweetsListFragment extends Fragment {
             } 
         });
         */
+
+
 		return v;
 	}
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        ViewGroup viewGroup = (ViewGroup) view;
+
+        // As we're using a ListFragment we create a PullToRefreshLayout manually
+        mPullToRefreshLayout = new PullToRefreshLayout(viewGroup.getContext());
+
+        // We can now setup the PullToRefreshLayout
+        ActionBarPullToRefresh.from(getActivity())
+                // We need to insert the PullToRefreshLayout into the Fragment's ViewGroup
+                .insertLayoutInto(viewGroup)
+                        // Here we mark just the ListView and it's Empty View as pullable
+                //.theseChildrenArePullable(android.R.id.list, android.R.id.empty)
+                .theseChildrenArePullable(R.id.lvTweets)
+                .listener(this)
+                .setup(mPullToRefreshLayout);
+
+    }
+
+    @Override
+    public void onRefreshStarted(View view) {
+        // Hide the list
+        // setListShown(false);
+        lvTweets.setVisibility(View.INVISIBLE);
+        refreshTimeline();
+        /**
+         * Simulate Refresh with 4 seconds sleep
+         */
+
+    }
 	
 	public void addTweetstoTimeline(int count, long maxId, long sinceId) {	
 		
@@ -128,7 +164,6 @@ public class TweetsListFragment extends Fragment {
 					checkTweetTypeAndSetSinceIdAndMaxId();
 				}
 				stopRefreshing();
-				
 			}
 
 			@Override
@@ -188,11 +223,11 @@ public class TweetsListFragment extends Fragment {
 			newTweetType= TweetQueryType.NEWER_TWEETS;
 			addTweetstoTimeline(count, 0, sinceId);
 		} else { networkUnavailableToast(); }
-		
 	}
 	
 	private void stopRefreshing() {
-		//swipeContainer.setRefreshing(false);
+        lvTweets.setVisibility(View.VISIBLE);
+        mPullToRefreshLayout.setRefreshComplete();
 		
 	}
 	public boolean doesDatabaseExist() {

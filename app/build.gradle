@@ -26,4 +26,5 @@ dependencies {
     compile files('libs/codepath-utils.jar')
     compile files('libs/scribe-codepath.jar')
     compile files('libs/universal-image-loader-1.8.4.jar')
+    compile 'com.github.chrisbanes.actionbarpulltorefresh:library:+'
 }
