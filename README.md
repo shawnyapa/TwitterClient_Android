@@ -29,8 +29,12 @@ An Android Twitter Client originally built as part of a CodePath Course Project
  - Pull to Refresh Tweets for all Timelines
 
 ## Libraries and Implementations
- - PulltoRefresh (
- - 
+ - Android Async Http (https://github.com/loopj/android-async-http)
+ - Universal Image Loader (https://github.com/nostra13/Android-Universal-Image-Loader)
+ - Active Android (https://github.com/pardom/ActiveAndroid)
+ - PulltoRefresh (https://github.com/chrisbanes/ActionBar-PullToRefresh)
+ - Twitter API (https://dev.twitter.com/rest/public)
+ - Special Thanks to CodePath for multiple Utilities, Guides, and Libraries (https://codepath.com/androidbootcamp)
 
 ## Build & Test
  - Project can be cloned and built using Android Studio and Gradle
