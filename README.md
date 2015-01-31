@@ -1,9 +1,9 @@
 # Android TwitterClient
 
-## An Android Twitter Client originally built as part of a CodePath Course Project
+An Android Twitter Client originally built as part of a CodePath Course Project
  Note: Recently Migrated from an Eclipse Project to Android Studio
 
-## Screen Recoring
+## Screen Recording
 <img src="http://i.imgur.com/OWGKWYZ.gif" title="Hosted by imgur.com" />
 
 ## User Stories
@@ -29,8 +29,9 @@
  - Pull to Refresh Tweets for all Timelines
 
 ## Libraries and Implementations
+ - PulltoRefresh (
+ - 
 
 ## Build & Test
  - Project can be cloned and built using Android Studio and Gradle
  - Project has been tested with Genymotion(Virtual) and Nexus 5 (L) (Physical)
- - 
