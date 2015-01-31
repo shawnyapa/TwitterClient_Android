@@ -4,7 +4,7 @@ An Android Twitter Client originally built as part of a CodePath Course Project
  Note: Recently Migrated from an Eclipse Project to Android Studio
 
 ## Screen Recording
-<img src="http://i.imgur.com/OWGKWYZ.gif" title="Hosted by imgur.com" />
+<img src="http://i.imgur.com/UnqTLZV.gif" title="Hosted by imgur.com" />
 
 ## User Stories
  - User can switch between Timeline and Mention views using tabs.
